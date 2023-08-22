@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator using Javascript with the help of input fields</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="cal-container">
+            <h2>Calculator with input fields</h2>
+            <hr>
+            <div class="partition">
+                <label for="first-num">First number</label>
+                <input type="text" placeholder="Enter the first number" id="first-num" name="number" class="input" required>
+            </div>
+            <div class="partition">
+                <label for="second-num">Second number</label>
+                <input type="text" placeholder="Enter the second number" id="second-num" name="number" class="input" required>
+            </div>
+            <h2>Result</h2>
+            <div class="result"></div>
+            <div class="btn-grp">
+                <button onclick="add()">Addition (+)</button>
+                <button onclick="sub()">Subration (-)</button><br>
+                <button onclick="mul()">Multiplication (X)</button>
+                <button onclick="div()">Division (/)</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
